@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx/17.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uopeople.weatherapp.WeatherController">
+    <TextField fx:id="locationField" promptText="Enter Location" />
+    <Button text="Get Weather" onAction="#fetchWeather"/>
+
+    <Label fx:id="temperatureLabel" text="Temperature:"/>
+    <Label fx:id="humidityLabel" text="Humidity:"/>
+    <Label fx:id="windSpeedLabel" text="Wind Speed:"/>
+    <Label fx:id="descriptionLabel" text="Conditions:"/>
+
+    <ImageView fx:id="weatherIcon" fitWidth="100" fitHeight="100"/>
+</VBox>
